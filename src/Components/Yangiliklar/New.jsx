@@ -12,7 +12,7 @@ function New() {
     const limit = 8;
 
     useEffect(() => {
-        const newsApi = `http://13.60.234.19:5000/api/v1/news/get/all?page=${currentPage}&limit=${limit}`;
+        const newsApi = `https://lib.qaxramonov.uz/api/v1/news/get/all?page=${currentPage}&limit=${limit}`;
         fetch(newsApi)
             .then((response) => {
                 if (!response.ok) {

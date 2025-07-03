@@ -15,7 +15,7 @@ function BooksSection() {
 
   const fetchBooks = async () => {
     try {
-      const url = `http://13.60.234.19:5000/api/v1/admin/books/getBooks/all?page=${currentPage}&limit=${booksPerPage}`;
+      const url = `https://lib.qaxramonov.uz/api/v1/admin/books/getBooks/all?page=${currentPage}&limit=${booksPerPage}`;
       const res = await fetch(url);
       const data = await res.json();
       setBooks(data.data);
