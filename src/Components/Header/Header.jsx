@@ -67,13 +67,6 @@ const Header = () => {
   };
 
   const handleLogoutUser = async () => {
-    if (!token) {
-      console.warn("Token mavjud emas. To‘g‘ridan-to‘g‘ri chiqish.");
-      logout();
-      navigate("/signin");
-      return;
-    }
-
     try {
       const res = await logoutUser({}, {
         headers: {
