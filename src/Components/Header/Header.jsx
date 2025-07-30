@@ -94,7 +94,7 @@ const Header = () => {
         logout();
         navigate("/signin");
       } else {
-        alert("Sahifadan chiqishda xatolik: " + message);
+        console.log("Sahifadan chiqishda xatolik: " + message);
       }
     }
   };
